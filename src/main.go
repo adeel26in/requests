@@ -58,7 +58,7 @@ func Head(url string) (response *http.Response, err error) {
 	return response, nil
 }
 
-func POST(url string, data io.Reader) (response *http.Response, err error) {
+func Post(url string, data io.Reader) (response *http.Response, err error) {
 	client := &http.Client{
 		Timeout: 5 * time.Second,
 	}
